@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2023-01-19T13:03:01.523Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.5" etag="ds4a8yIDvbk-MTygjK6m" type="github">
+  <diagram id="nuG8poRfwZVijBHh0T0h" name="Page-1">
+    <mxGraphModel dx="2074" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-1" value="ProtocolSDK" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="450" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-2" value="+ protocol&#xa;+ network" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-1">
+          <mxGeometry y="26" width="450" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-1">
+          <mxGeometry y="70" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-4" value="+ buildStakeTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ signTransaction(connector, accountId, rawTx): signedTx&#xa;+ broadcastTransaction(signedTx): txId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-1">
+          <mxGeometry y="78" width="450" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-6" value="NearProtocolSDK" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="450" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-7" value="+ network&#xa;+ nearEngine" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-6">
+          <mxGeometry y="26" width="450" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-6">
+          <mxGeometry y="70" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-9" value="+ buildStakeTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ buildUnstakeTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ buildWithdrawTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ signTransaction(connector, accountId, rawTx): signedTx&#xa;+ broadcastTransaction(signedTx): txId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-6">
+          <mxGeometry y="78" width="450" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-10" value="AvalancheSDK" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="700" width="450" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-11" value="+ network&#xa;+ avalancheEngine" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-10">
+          <mxGeometry y="26" width="450" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-10">
+          <mxGeometry y="70" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-13" value="+ buildStakeTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ signTransaction(connector, accountId, rawTx): signedTx&#xa;+ broadcastTransaction(signedTx): txId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-10">
+          <mxGeometry y="78" width="450" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-14" value="EthereumSDK" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="860" width="450" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-15" value="+ protocol&#xa;+ network" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-14">
+          <mxGeometry y="26" width="450" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-14">
+          <mxGeometry y="70" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-17" value="+ buildStakeTransaction(connector, accountId, validator, amount?): rawTx&#xa;+ signTransaction(connector, accountId, rawTx): signedTx&#xa;+ broadcastTransaction(signedTx): txId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-14">
+          <mxGeometry y="78" width="450" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-18" value="Connector" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="820" width="450" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-19" value="+ accounts" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-18">
+          <mxGeometry y="26" width="450" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-18">
+          <mxGeometry y="50" width="450" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-21" value="+ getAccount(accountId): account&#xa;+ getAddress(accountId, protocol, network): address&#xa;+ signTxHash(accountId, protocol, network, txHash): signature" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-18">
+          <mxGeometry y="58" width="450" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-22" value="FireblocksAccount" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="900" y="560" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-23" value="+ id&#xa;+ fireblocksId&#xa;+ secretKey&#xa;+ apiKey" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-22">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-22">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-26" value="StringAccount" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="560" width="160" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-27" value="+ id&#xa;+ address&#xa;+ privateKeyVarname&#xa;+ protocol&#xa;+ network" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-26">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-28" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-26">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-29" value="Account" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="362" width="160" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-30" value="+ id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-29">
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="h72_EdtKZQ8-tya2DSfX-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h72_EdtKZQ8-tya2DSfX-29">
+          <mxGeometry y="50" width="160" height="8" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
